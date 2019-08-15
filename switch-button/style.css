@@ -1,0 +1,41 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .switch {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 84px;
+    height: 44px;
+    background-color: #c6c6c6;
+    border-radius: 40px;
+    border: 1px solid gray;
+    outline: none;
+    position: relative;
+    transition: 200ms;
+  }
+  
+  .switch:checked {
+    background-color: green;
+    border: 1px solid green;
+  }
+  
+  .switch:before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    transition: 200ms;
+  }
+  
+  .switch:checked:before {
+    left: 41px;
+  }
